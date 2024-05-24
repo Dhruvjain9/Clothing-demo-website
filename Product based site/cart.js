@@ -281,8 +281,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const proceedToCheckoutButton = document.getElementById("proceed-to-checkout");
     proceedToCheckoutButton.addEventListener("click", finalCheckout);
-    const proceedToCheckoutButton = document.getElementById("proceed-to-checkout");
-    proceedToCheckoutButton.addEventListener("click", finalCheckout);
+
 });
 
     
