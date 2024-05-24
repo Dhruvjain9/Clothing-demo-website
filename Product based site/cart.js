@@ -257,7 +257,7 @@ document.addEventListener("DOMContentLoaded", function () {
         
         paymentModeSelect.addEventListener("change", function () {
             const selectedOption = paymentModeSelect.value;
-            if (selectedOption === "UPI Payment") {
+            if (selectedOption === "Online payment") {
                 qrCodeContainer.style.display = "block";
             } else {
                 qrCodeContainer.style.display = "none";

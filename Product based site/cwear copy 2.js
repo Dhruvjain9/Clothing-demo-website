@@ -42,6 +42,12 @@ addToCartButtons.forEach((button) => {
             // Add the product to the cart
             addToCart(product);
             console.log('Product added to cart:', product);
+            const addedToCartOverlay = getElementById("added-to-cart");
+            addedToCartOverlay.style.display="block";
+            function overlayHide(){
+                addedToCartOverlay.style.display="none";
+            };
+            setTimeout(overlayHide,3000);
         }
     });
 });
