@@ -1,5 +1,7 @@
 window.addEventListener("load", function () {
     document.getElementById("loading-screen").style.display = "none";
+    const addedToCartOverlay = document.getElementById("added-to-cart");
+    addedToCartOverlay.style.display="none";
 });
 function openSidebar() {
     document.querySelector(".sidebar.right").style.width = "250px";
@@ -42,7 +44,7 @@ addToCartButtons.forEach((button) => {
             // Add the product to the cart
             addToCart(product);
             console.log('Product added to cart:', product);
-            const addedToCartOverlay = getElementById("added-to-cart");
+            const addedToCartOverlay = document.getElementById("added-to-cart");
             addedToCartOverlay.style.display="block";
             function overlayHide(){
                 addedToCartOverlay.style.display="none";
